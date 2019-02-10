@@ -11,11 +11,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Location {
-	
+	//Cannot Change it
 	private final int locationID;
 	private final String description;
-	private Map<String, Integer> exits; 
-	
+	private final Map<String, Integer> exits; 	
 	
 	public Location(int locationID, String description) {
 		super();
@@ -23,14 +22,13 @@ public class Location {
 		this.description = description;
 		exits = new HashMap<>();
 		exits.put("Q", 0);
-	}
-	
+	}	
 	
 	public void addExit(String direction, Integer location) {
-		exits.put(direction, location);
-		
+		exits.put(direction, location);		
 	}
 
+	// returns a copy not the actual one
 	public Map<String, Integer> getExits() {
 		return new HashMap<String, Integer>(exits);
 	}
