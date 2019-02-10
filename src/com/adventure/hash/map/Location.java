@@ -31,25 +31,15 @@ public class Location {
 		
 	}
 
-
 	public Map<String, Integer> getExits() {
 		return new HashMap<String, Integer>(exits);
 	}
-
 
 	public int getLocationID() {
 		return locationID;
 	}
 
-
 	public String getDescription() {
 		return description;
 	}
-	
-	
-	
-	
-	
-	
-
 }
